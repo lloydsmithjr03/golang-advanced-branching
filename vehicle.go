@@ -5,11 +5,13 @@ type vehicle interface {
 
 type car struct {
 	model       string
+	make        string
 	typeVehicle string
 }
 
 type truck struct {
 	model       string
+	make        string
 	typeVehicle string
 }
 
@@ -37,7 +39,7 @@ type feedbackResult struct {
 }
 
 var vehicleResult map[string]feedbackResult
-var inventory vehicle
+var inventory []vehicle
 
 type rating float32
 
